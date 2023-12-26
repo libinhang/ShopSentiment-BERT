@@ -19,7 +19,7 @@ if __name__ == '__main__':
     torch.cuda.manual_seed_all(1234)
     torch.backends.cudnn.deterministic = True 
 
-    dataset = 'THUCNews'    
+    dataset = 'ReviewData'    
     model_path = import_module('models.' + args.model_name) 
     config = model_path.Config(dataset)
 
